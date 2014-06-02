@@ -28,7 +28,10 @@ class Laravel4SeoServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		//
+        $this->app->singleton('seo',function ($app)
+        {
+            return new SEOOutput();
+        });
 	}
 
 	/**
