@@ -8,7 +8,7 @@ use Redirect;
 use Session;
 use Sopamo\Laravel4Seo\Models\SEO;
 
-class SEOController extends \Controller {
+class SEOController {
     
     public function update($id) {
         

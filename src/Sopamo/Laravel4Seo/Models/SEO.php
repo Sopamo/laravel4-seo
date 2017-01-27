@@ -1,9 +1,9 @@
 <?php namespace Sopamo\Laravel4Seo\Models;
 
 use DB;
-use Eloquent;
+use Illuminate\Database\Eloquent\Model;
 
-class SEO extends Eloquent {
+class SEO extends Model {
     protected $table = 'seo';
 
     /**

@@ -1,15 +1,16 @@
 {
     "name": "sopamo/laravel4-seo",
-    "description": "A Laravel 4 package for adding SEO information to any Eloquent model",
+    "description": "A Laravel 5 package for adding SEO information to any Eloquent model",
     "authors": [
         {
-            "name": "Paul Mohr",
+            "name": "Sopamo GmbH",
             "email": "p.mohr@sopamo.de"
         }
     ],
     "require": {
         "php": ">=5.3.0",
-        "illuminate/support": "4.*"
+        "illuminate/support": "5.*",
+        "illuminate/database": "5.*"
     },
     "autoload": {
         "classmap": [

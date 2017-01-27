@@ -18,8 +18,6 @@ class Laravel4SeoServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('sopamo/laravel4-seo');
-        
         // Require custom SEO routes
         include __DIR__ . '/../../routes.php';
 	}
