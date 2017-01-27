@@ -1,6 +1,7 @@
 {
     "name": "sopamo/laravel4-seo",
     "description": "A Laravel 5 package for adding SEO information to any Eloquent model",
+    "license": "MIT",
     "authors": [
         {
             "name": "Sopamo GmbH",
