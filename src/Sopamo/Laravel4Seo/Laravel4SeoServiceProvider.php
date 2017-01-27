@@ -20,6 +20,9 @@ class Laravel4SeoServiceProvider extends ServiceProvider {
 	{
         // Require custom SEO routes
         include __DIR__ . '/../../routes.php';
+        
+        // Load views
+        $this->loadViewsFrom(__DIR__ . '/../../views', 'laravel4-seo');
 	}
 
 	/**
