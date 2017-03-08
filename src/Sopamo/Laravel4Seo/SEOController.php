@@ -2,13 +2,14 @@
 
 use App;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
+use Illuminate\Routing\Controller;
 use Input;
 use Lang;
 use Redirect;
 use Session;
 use Sopamo\Laravel4Seo\Models\SEO;
 
-class SEOController {
+class SEOController extends Controller {
     
     public function update($id) {
         
