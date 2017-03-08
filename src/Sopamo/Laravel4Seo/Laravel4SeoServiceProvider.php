@@ -23,6 +23,9 @@ class Laravel4SeoServiceProvider extends ServiceProvider {
         
         // Load views
         $this->loadViewsFrom(__DIR__ . '/../../views', 'laravel4-seo');
+        
+        // Load translations
+        $this->loadTranslationsFrom(__DIR__ . '/../../lang', 'laravel4-seo');
 	}
 
 	/**
