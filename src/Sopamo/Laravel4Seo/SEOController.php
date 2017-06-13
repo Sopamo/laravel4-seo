@@ -3,7 +3,6 @@
 use App;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Routing\Controller;
-use Input;
 use Lang;
 use Redirect;
 use Session;
@@ -17,7 +16,7 @@ class SEOController extends Controller {
         try {
             /** @var SEO $seo */
             $seo = SEO::findOrFail($id);    
-            $seo->saveUserInput(Input::all());
+            $seo->saveUserInput(\Request::all());
         } catch(ModelNotFoundException $e) {
             App::abort(404,$e->getMessage());
         }
